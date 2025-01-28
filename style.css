@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #4da8da, #001f3f);
+    background: linear-gradient(to bottom, #5ebbd4, #003366);
     color: white;
     overflow-x: hidden;
+    position: relative;
 }
 
 /* الصفحة الترحيبية */
