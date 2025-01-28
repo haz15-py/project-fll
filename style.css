@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #5ebbd4, #003366);
+    background: linear-gradient(to bottom, #87cefa, #001f3f);
     color: white;
     overflow-x: hidden;
     position: relative;
@@ -12,7 +12,7 @@ body {
 /* الصفحة الترحيبية */
 .intro-screen {
     height: 100vh;
-    background: url('ocean-surface-day.jpg') no-repeat center center/cover;
+    background: url('assets/ocean-surface-day.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,20 +77,15 @@ header nav ul li a {
 .content-box {
     margin: 20px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.content-box h2 {
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-.content-box ul {
-    list-style: disc;
-    padding-left: 20px;
+.content-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -113,11 +108,11 @@ footer {
 .bubbles span {
     position: absolute;
     bottom: -150px;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.6);
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    animation: bubble 8s infinite;
+    animation: bubble 10s infinite ease-in-out;
     animation-delay: calc(-1s * var(--i));
 }
 
@@ -125,11 +120,8 @@ footer {
     0% {
         transform: translateY(0) scale(1);
     }
-    50% {
-        transform: translateY(-60vh) scale(1.5);
-    }
     100% {
-        transform: translateY(-100vh) scale(0);
+        transform: translateY(-100vh) scale(1);
     }
 }
 
@@ -158,5 +150,5 @@ footer {
 
 .corals img {
     max-width: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
