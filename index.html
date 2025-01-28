@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كونسول المحيط</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- الصفحة الترحيبية -->
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-content">
+            <h1>مرحبًا بك في كونسول المحيط</h1>
+            <p>منصة مبتكرة لاستكشاف التراث البحري وتعزيز التنوع البيولوجي.</p>
+            <h2>فريقنا: Three Dots</h2>
+            <button id="dive-button">لنغص في أعماق المحيط!</button>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="main-container" id="main-content" style="display: none;">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">عن المشروع</a></li>
+                    <li><a href="#facts">حقائق عن المحيط</a></li>
+                    <li><a href="#survey">استبيانات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="content-box">
+                <h2>عن المشروع</h2>
+                <p>نسعى إلى رفع مستوى الوعي البيئي بالمجالات البحرية، وتعزيز فهمنا للتراث البحري والتنوع البيولوجي.</p>
+            </section>
+
+            <section id="facts" class="content-box">
+                <h2>حقائق عن المحيط</h2>
+                <ul>
+                    <li>تغطي المحيطات أكثر من 70% من سطح الأرض.</li>
+                    <li>تُعد المحيطات مصدرًا لـ 50% من الأكسجين الذي نتنفسه.</li>
+                    <li>تحوي المحيطات نظامًا بيئيًا غنيًا ومتنوعًا.</li>
+                </ul>
+            </section>
+
+            <section id="survey" class="content-box">
+                <h2>استبيانات</h2>
+                <div>
+                    <p>قياس الوعي بالتراث البحري:</p>
+                    <a href="https://forms.office.com/r/s8ZnC8nx3n" class="btn">شارك في الاستبيان</a>
+                </div>
+                <div>
+                    <p>تواصل معنا:</p>
+                    <form>
+                        <label for="name">اسمك:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="message">رسالتك:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">إرسال</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Three Dots. جميع الحقوق محفوظة.</p>
+        </footer>
+
+        <div class="bubbles"></div>
+        <div class="corals">
+            <img src="coral.png" alt="شعب مرجانية">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
