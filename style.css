@@ -1,0 +1,147 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #001F3F);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* الصفحة الترحيبية */
+.intro-screen {
+    height: 100vh;
+    background: url('ocean-surface-day.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro-screen h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-screen p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.intro-screen button {
+    background-color: #007FFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.intro-screen button:hover {
+    background-color: #005BB5;
+    transform: scale(1.1);
+}
+
+/* المحتوى الرئيسي */
+.main-container {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #005BB5;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content-box {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+}
+
+.content-box h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.content-box ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background: #001F3F;
+    text-align: center;
+    padding: 10px;
+}
+
+/* الفقاعات */
+.bubbles span {
+    position: absolute;
+    bottom: -150px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: bubble 8s infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-60vh) scale(1.5);
+    }
+    100% {
+        transform: translateY(-100vh) scale(0);
+    }
+}
+
+/* الشعب المرجانية */
+.corals {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    animation: coralMovement 20s infinite;
+}
+
+@keyframes coralMovement {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.corals img {
+    max-width: 100%;
+    opacity: 0.7;
+}
