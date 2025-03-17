@@ -12,7 +12,7 @@ body {
 /* الصفحة الترحيبية */
 .intro-screen {
     height: 100vh;
-    background: url('https://<haz15-py>.github.com/<repository-name>/assets/patrickltr-6ZuF6ZCvtJc-unsplash.jpg') no-repeat center center/cover;
+    background: url('https://<haz15-py>.github.io/<repository-name>/assets/patrickltr-6ZuF6ZCvtJc-unsplash.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
