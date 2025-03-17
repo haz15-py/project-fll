@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const introScreen = document.getElementById('intro-screen');
     const mainContent = document.getElementById('main-content');
@@ -21,4 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     setInterval(createBubble, 400);
+
+    // زر اختبار الوعي البيئي
+    const awarenessTestButton = document.getElementById('awareness-test');
+    awarenessTestButton.addEventListener('click', () => {
+        window.open('https://forms.office.com/r/s8ZnC8nx3n', '_blank');
+    });
 });
